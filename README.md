@@ -1,16 +1,33 @@
 # expense_tracker
 
-A new Flutter project.
+A Flutter expense tracker with Firebase authentication, budgets, categories, and expense management.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- A Firebase project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Firebase setup
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Firebase config files are not committed to this repo. Generate them locally:
+
+```bash
+dart pub global activate flutterfire_cli
+flutterfire configure
+```
+
+This creates `lib/firebase_options.dart` and platform config files (for example `android/app/google-services.json`). See the `.example` files in the repo for the expected structure.
+
+### Run the app
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Resources
+
+- [Flutter documentation](https://docs.flutter.dev/)
+- [FlutterFire setup](https://firebase.google.com/docs/flutter/setup)
